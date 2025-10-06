@@ -1,19 +1,15 @@
 package com.tdd.atividade;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest {
-
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    public void testMultiplication(){
+        Dollar five = new Dollar(5);
+        five.times(2);
+        assertEquals(10, five.amount);
     }
 }
